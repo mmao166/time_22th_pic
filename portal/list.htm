@@ -1,0 +1,87 @@
+<!--{template common/header}-->
+<!--[name]{lang portalcategory_listtplname}[/name]-->
+<!--{eval $list = array();}-->
+<!--{eval $wheresql = category_get_wheresql($cat);}-->
+<!--{eval $list = category_get_list($cat, $wheresql, $page);}-->
+<div id="wp" class="wp time_wp cl"><link rel="stylesheet" type="text/css" href="template/time_22th_pic/src/list.css" />
+<script src="template/time_22th_pic/src/js/jquery.superslide.js" type="text/javascript" type="text/javascript"></script><style id="diy_style" type="text/css"></style>
+</div>
+<!--{ad/text/wp a_t}-->
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+  <!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+  <!--{ad/articlelist/mbm hm/1}--><!--{ad/articlelist/mbm hm/2}-->
+		<!--[diy=listcontenttop]--><div id="listcontenttop" class="area"></div><!--[/diy]-->
+<div id="ct" class="ct2 wp inside_box cl" style="margin: 20px 0 0 0;">
+  <!--[diy=listcontenttop]--><div id="listcontenttop" class="area"></div><!--[/diy]-->
+  <div class="cl" style="float: none; padding: 0; margin: 0; box-shadow: 0px 1px 1px rgba(0,0,0,0.08); background: #FFFFFF;">
+     
+    <div class="index_breadcrumb cl">
+        <h3>
+		<!--{loop $cat[ups] $value}--> <a href="{$portalcategory[$value['catid']]['caturl']}">$value[catname]</a><em>&rsaquo;</em><!--{/loop}-->
+		$cat[catname] </h3>
+    </div>
+    <div class="bm" style="margin: 0; background: none;">
+      <!-- 文章列表 begin -->
+<div class="index_post_loop fix cl">
+  <dl class="cl">
+            <!--{loop $list['list'] $value}-->
+				<!--{eval $highlight = article_title_style($value);}-->
+				<!--{eval $article_url = fetch_article_url($value);}-->    
+            <dd> <a href="$article_url" class="thumb" title="$value[title]" $highlight target="_blank">
+            <!--{if $value[pic]}-->
+             <img src="$value[pic]" alt="$value[title]">
+             <!--{/if}-->
+      <p class="show"> <span class="time"> <i class="fa fa-calendar-minus-o"></i> $value[dateline] </span> <i class="fa fa-plus-circle icon"></i></p>
+      </a>
+      <h2 class="tits"><a href="$article_url">$value[title]</a></h2>
+      <div class="info fix">
+        <div class="cate fl1"><i class="fa fa-folder-o"></i> <a href="{$portalcategory[$value['catid']]['caturl']}" rel="category tag">$value[catname]</a></div>
+        <div class="like fr"><i class="fa fa-heart-o" title="围观"></i><a href="javascript:void(0)" class="jm-post-like" data-post_id="" title=""></a><span class="jm-load"></span></div>
+      </div>
+    </dd>
+     <!--{/loop}-->          
+         
+  </dl>
+</div>
+      <!-- 文章列表 end --> 
+      <!--[diy=listloopbottom]--><div id="listloopbottom" class="area"></div><!--[/diy]--> 
+    </div>
+        <!--{ad/articlelist/mbm hm/3}--><!--{ad/articlelist/mbm hm/4}-->
+		<!--{if $list['multi']}--><div class="pgs cl">{$list['multi']}</div><!--{/if}-->
+    <!--[diy=diycontentbottom]--><div id="diycontentbottom" class="area"></div><!--[/diy]-->
+      </div>
+</div>
+	<div class="sd pph">
+
+		<div class="drag">
+			<!--[diy=diyrighttop]--><div id="diyrighttop" class="area"></div><!--[/diy]-->
+		</div>
+
+<!--{if $cat[others]}-->
+		<div class="bm" style = "display: none">
+			
+		</style>>
+			<div class="bm_h cl">
+				<h2>{lang category_related}</h2>
+			</div>
+			<div class="bm_c">
+				<ul class="xl xl2 cl">
+					<!--{loop $cat[others] $value}-->
+					<li>&bull; <a href="{$portalcategory[$value['catid']]['caturl']}">$value[catname]</a></li>
+					<!--{/loop}-->
+				</ul>
+			</div>
+		</div>
+<!--{/if}-->
+
+		<div class="drag">
+			<!--[diy=diy2]--><div id="diy2" class="area"></div><!--[/diy]-->
+		</div>
+
+	</div>
+</div>
+<div class="wp mtn"> 
+  <!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]--> 
+</div></div>
+<!--{template common/footer}-->

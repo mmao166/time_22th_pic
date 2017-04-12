@@ -1,0 +1,269 @@
+<!--{template common/header}-->
+<script type="text/javascript">var fid = parseInt('$_G[fid]'), tid = parseInt('$_G[tid]');</script>
+<!--{if $modmenu['thread'] || $modmenu['post']}-->
+<script type="text/javascript" src="{$_G['setting']['jspath']}forum_moderate.js?{VERHASH}"></script>
+<!--{/if}-->
+<script type="text/javascript" src="template/time_22th_pic/src/js/forum_viewthread.js?{VERHASH}"></script>
+<script type="text/javascript">zoomstatus = parseInt($_G['setting']['zoomstatus']);var imagemaxwidth = '{$_G['setting']['imagemaxwidth']}';var aimgcount = new Array();</script>
+<style id="diy_style" type="text/css"></style>
+<!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
+<div id="pt" class="bm cl">
+	<div class="z"><a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php">{$_G[setting][navs][2][navname]}</a>$navigation <em>&rsaquo;</em> <a href="forum.php?mod=viewthread&tid=$_G[tid]">$_G[forum_thread][short_subject]</a> </div>
+</div>
+<!--{hook/viewthread_top}-->
+<!--{ad/text/wp a_t}-->
+<!-- 板块右侧 -->
+<div id="main_sidebar">
+	<div class="itofeedback cl">
+		<a class="bluebigbutton" onclick="showWindow('newthread', 'forum.php?mod=post&amp;action=newthread&amp;fid=2')" href="javascript:;" title="发新帖">发新帖</a>
+		<a href="plugin.php?id=dsu_paulsign:sign" target="_blank" class="greenbigbutton" title="签到" style="margin-right: 0;">签到SIGN</a>
+	</div>
+	<!--[diy=diy6]--><div id="diy6" class="area"></div><!--[/diy]-->
+	<div id="recommendArticle">
+		<!--[diy=diy7]--><div id="diy7" class="area"><div id="portal_block_365" class="block move-span"><div id="portal_block_365_content" class="dxb_bc"><div class="box s_timeline">
+		<h3 class="modname">推荐阅读</h3>
+		<div class="s_text_list">
+			<div class="nano has-scrollbar">
+				<ul style="right: -17px;" tabindex="0" class="nano-content"><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=35" target="_blank">树德生活馆 声控木头闹钟</a><p>2017-01-21</p></li><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=34" target="_blank">树德生活 染织布双肩包</a><p>2017-01-21</p></li><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=33" target="_blank">ONEDAY《空白》纸钱包</a><p>2017-01-21</p></li><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=32" target="_blank">ONEDAY《章鱼武士》纸钱包</a><p>2017-01-21</p></li><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=31" target="_blank">ONEDAY 《太空狂想曲》纸钱包</a><p>2017-01-21</p></li><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=30" target="_blank">ONEDAY《GET FIT》纸钱包</a><p>2017-01-21</p></li><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=29" target="_blank">ONEDAY 设计师款纸钱包</a><p>2017-01-21</p></li><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=28" target="_blank">ONEDAY 《jokulman》手提包</a><p>2017-01-21</p></li><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=25" target="_blank">5G什么时候可以用？三大运营商已经做出了回</a><p>2016-07-12</p></li><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=9" target="_blank">2015德国 MutzurWut 国际海报设计竞赛</a><p>2015-09-02</p></li><li><i><span></span></i><a href="forum.php?mod=viewthread&tid=20" target="_blank">PlayStation VR泄露售价3272元</a><p>2016-01-21</p></li></ul>
+			</div>
+		</div></div></div></div><div id="tabES6sZ0" class="tab2 frame-tab move-span cl"><div id="tabES6sZ0_title" class="tab-title title column cl" switchtype="mouseover"><div id="portal_block_366" class="block move-span"><div class="blocktitle title"><span style="float:;margin-left:px;font-size:;color: !important;" class="titletext">便民服务</span></div><div id="portal_block_366_content" class="dxb_bc"><div class="portal_block_summary"><div class="_helplidelist">
+		<div style="display: block;">
+			<div class="grid_list">
+				<ul>
+					<li><a href="#" target="_blank"><span class="grid_list_img"><img src="template/time_22th_pic/src/s_customer.png" height="30" width="30"></span>在线咨询</a></li>
+					<li><a href="#" target="_blank"><span class="grid_list_img"><img src="template/time_22th_pic/src/s_map.png" height="30" width="30"></span>公司地址</a></li>
+					<li><a href="#" target="_blank"><span class="grid_list_img"><img src="template/time_22th_pic/src/s_service.png" height="30" width="30"></span>服务中心</a></li>
+				</ul>
+			</div>
+			<div class="customer_service">
+				<h4 class="fullfont color">400-8826-226</h4>
+				<p class="font12 color3">电话服务热线时间：9:00 - 21:00</p>
+			</div>
+		</div>
+	</div></div></div></div><div id="portal_block_368" class="block move-span"><div class="blocktitle title"><span style="float:;margin-left:px;font-size:;color: !important;" class="titletext">关注我们</span></div><div id="portal_block_368_content" class="dxb_bc"><div class="portal_block_summary"><div class="snswidget" style="display: block;">
+	<div class="sns_widget"><a href="#" title="ZUK官方微博" target="_blank"><img src="template/time_22th_pic/src/wb_sidebar.jpg" height="120" width="120"></a>
+		<p><a href="#" target="_blank" title="ZUK官方微博">官方微博</a></p>
+	</div>
+	<div class="sns_widget"><img src="template/time_22th_pic/src/wx.png" title="扫一扫关注微信" height="120" width="120">
+		<p>ZUK微信</p>
+	</div>
+</div></div></div></div><div id="portal_block_367" class="block move-span"><div class="blocktitle title"><span style="float:;margin-left:px;font-size:;color: !important;" class="titletext">社区新手</span></div><div id="portal_block_367_content" class="dxb_bc"><div class="portal_block_summary"><div class="forum_newbie" style="display: block;">
+<ul class="top_list cl">
+	<a href="#" target="_blank"><span class="a_arrow"></span>发帖回复</a>
+	<a href="#" target="_blank"><span class="a_arrow"></span>社区版规</a>
+	<a href="#" target="_blank"><span class="a_arrow"></span>金币达人</a>
+	<a href="#" target="_blank"><span class="a_arrow"></span>任务体系</a>
+	<a href="#" target="_blank"><span class="a_arrow"></span>荣誉勋章</a>
+	<a href="#" target="_blank"><span class="a_arrow"></span>会员认证</a>
+</ul>
+</div></div></div></div></div><div id="tabES6sZ0_content" class="tb-c"></div><script type="text/javascript">initTab("tabES6sZ0","mouseover");</script></div></div><!--[/diy]-->
+</div>
+<div id="jiang108">
+	<!--[diy=diy8]--><div id="diy8" class="area"></div><!--[/diy]-->
+</div>
+<!--[diy=diy11]--><div id="diy11" class="area"></div><!--[/diy]-->
+</div>
+<!-- 板块右侧 -->
+<div style="float: left; width: 850px; overflow: visible;">
+	<div class="forum-left" style="float: none; padding: 0; margin: 0 0 15px 0; box-shadow: 0px 1px 1px rgba(0,0,0,0.08);">
+		<div class="cl">
+			<div id="postlist" class="pl bm">
+				<table cellspacing="0" cellpadding="0">
+					<!-- 开始 -->
+					<tr>
+						<!--{if !$close_leftinfo}-->
+			<td class="pls ptn pbn">
+				<!--{if $_G['page'] > 1}-->
+				<div id="tath" class="cl">
+					<!--{if $_G[forum_thread][authorid] && $_G[forum_thread][author]}-->
+						<a href="home.php?mod=space&uid=$_G[forum_thread][authorid]" title="$_G[forum_thread][author]"><!--{avatar($_G[forum_thread][authorid],small)}--></a>
+						{lang thread_author}: <a href="home.php?mod=space&uid=$_G[forum_thread][authorid]" title="$_G[forum_thread][author]">$_G[forum_thread][author]</a>
+					<!--{else}-->
+						{lang thread_author}:
+						<!--{if $_G['forum']['ismoderator']}-->
+							<a href="home.php?mod=space&uid=$_G[forum_thread][authorid]">{lang anonymous}</a>
+						<!--{else}-->
+							{lang anonymous}
+						<!--{/if}-->
+					<!--{/if}-->
+				</div>
+				<!--{else}-->
+				<div class="hm ptn">
+					<span class="xg1">{lang show}:</span> <span class="xi1">$_G[forum_thread][views]</span><span class="pipe">|</span><span class="xg1">{lang reply}:</span> <span class="xi1">$_G[forum_thread][allreplies]</span>
+				</div>
+				<!--{/if}-->
+			</td>
+			<!--{/if}-->
+						<td class="plc ptm pbn" style="border-radius: 0 3px 0 0;">
+							<div class="cl" style="margin: 25px 0 10px 0;">
+								<h1 class="ts f18" style="height: 25px; line-height: 25px;">
+									<!--{if $_G['forum_thread']['typeid'] && $_G['forum']['threadtypes']['types'][$_G['forum_thread']['typeid']]}-->
+						<!--{if !IS_ROBOT && ($_G['forum']['threadtypes']['listable'] || $_G['forum']['status'] == 3)}-->
+							<a href="forum.php?mod=forumdisplay&fid=$_G[fid]&filter=typeid&typeid=$_G[forum_thread][typeid]" class="forum_type">[{$_G['forum']['threadtypes']['types'][$_G['forum_thread']['typeid']]}]</a>
+						<!--{else}-->
+							[{$_G['forum']['threadtypes']['types'][$_G['forum_thread']['typeid']]}]
+						<!--{/if}-->
+					<!--{/if}-->
+					<!--{if $threadsorts && $_G['forum_thread']['sortid']}-->
+						<a href="forum.php?mod=forumdisplay&fid=$_G[fid]&filter=sortid&sortid=$_G[forum_thread][sortid]"  class="forum_type">[{$_G['forum']['threadsorts']['types'][$_G['forum_thread']['sortid']]}]</a>
+					<!--{/if}-->
+									<span id="thread_subject"><a href="forum.php?mod=viewthread&amp;tid=4" onclick="return copyThreadUrl(this, '现代模板')" title="点击标题复制链接">$_G[forum_thread][subject]</a></span></h1>
+								</div></td>
+							</tr>
+							<!-- 开始  -->
+						</table>
+				
+			</div>
+			<div id="postlistreply" class="pl">
+				<div id="post_new" class="viewthread_table" style="display: none"></div>
+			</div>
+		</div>
+		<!--{if $modmenu['thread']}-->
+	<div class="xi2 mbm pbm bbs">
+	<script type="text/javascript">
+		$('modmenu').lastChild.style.visibility = 'hidden';
+		document.write($('modmenu').innerHTML);
+	</script>
+	</div>
+		<!--{/if}-->
+		<form method="post" autocomplete="off" name="modactions" id="modactions">
+			<input type="hidden" name="formhash" value="640375ca" />
+			<input type="hidden" name="optgroup" />
+			<input type="hidden" name="operation" />
+			<input type="hidden" name="listextra" value="page%3D1" />
+			<input type="hidden" name="page" value="1" />
+		</form>
+		
+		<!--{hook/viewthread_title_row}-->
+
+	<table cellspacing="0" cellpadding="0" class="ad">
+		<tr>
+			<td class="pls">
+			<!--{if !$close_leftinfo}-->
+			</td>
+			<td class="plc">
+			<!--{/if}-->
+			</td>
+		</tr>
+	</table>
+		<!--{eval $postcount = 0;}-->
+	<!--{loop $postlist $post}-->
+		<!--{if $rushreply && $_GET['checkrush'] && $post['rewardfloor'] != 1}-->
+			<!--{eval continue;}-->
+		<!--{/if}-->
+		<div id="post_$post[pid]" {if $_G['blockedpids'] && $post['inblacklist']}style="display:none;"{/if}>
+			<!--{subtemplate forum/viewthread_node}-->
+		</div>
+		<!--{eval $postcount++;}-->
+	<!--{/loop}-->
+	<div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
+	<!--{if $_G['blockedpids']}-->
+		<div id='hiddenpoststip'><a href='javascript:display_blocked_post();'>{lang other_reply_hide}</a></div>
+		<div id="hiddenposts"></div>
+	<!--{/if}-->
+		<!--{if $fastpost}-->
+	<!--{subtemplate forum/viewthread_fastpost}-->
+		<!--{/if}-->
+		<!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]-->
+		<div id="visitedforums_menu" class="p_pop blk cl" style="display: none;">
+			<table cellspacing="0" cellpadding="0">
+				<tr>
+					<td id="v_forums"><h3 class="mbn pbn bbda xg1">浏览过的版块</h3>
+						<ul class="xl xl1">
+							<li><a href="forum.php?mod=forumdisplay&fid=41">商品中心</a></li><li><a href="forum.php?mod=forumdisplay&fid=38">线上活动</a></li><li><a href="forum.php?mod=forumdisplay&fid=39">摄影技巧</a></li>              </ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<script type="text/javascript">
+					new lazyload();
+				</script>
+				<script type="text/javascript">document.onkeyup = function(e){keyPageScroll(e, 0, 0, 'forum.php?mod=viewthread&tid=4', 1);}</script>
+			
+			<div class="pgs cl" style="margin: 10px 15px 0 15px; border-top: 0;">
+				<a id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=2')" href="javascript:;" title="发新帖"><img src="template/time_22th_pic/src/pn_post.png" alt="发新帖" /></a>
+			</div>
+		
+		<!--[diy=diy_relate]--><div id="diy_relate" class="area"></div><!--[/diy]-->
+		<script type="text/javascript">
+			var postminchars = parseInt('10');
+			var postmaxchars = parseInt('10000');
+			var disablepostctrl = parseInt('0');
+		</script>
+		<div id="f_pst" class="pl bm bmw">
+			<form method="post" autocomplete="off" id="fastpostform" action="forum.php?mod=post&amp;action=reply&amp;fid=2&amp;tid=4&amp;extra=page%3D1&amp;replysubmit=yes&amp;infloat=yes&amp;handlekey=fastpost" onSubmit="return fastpostvalidate(this)">
+				<table cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="pls">
+						</td>
+						<td class="plc">
+							<span id="fastpostreturn"></span>
+							<div class="cl">
+								<div id="fastposteditor">
+									<div class="tedt mtn">
+										<div class="bar">
+											<span class="y">
+												<a href="forum.php?mod=post&amp;action=reply&amp;fid=2&amp;tid=4" onclick="return switchAdvanceMode(this.href)">高级模式</a>
+											</span><script src="static/js/seditor.js?eqh" type="text/javascript"></script>
+											<div class="fpd">
+												<a href="javascript:;" title="文字加粗" class="fbld">B</a>
+												<a href="javascript:;" title="设置文字颜色" class="fclr" id="fastpostforecolor">Color</a>
+												<a id="fastpostimg" href="javascript:;" title="图片" class="fmg">Image</a>
+												<a id="fastposturl" href="javascript:;" title="添加链接" class="flnk">Link</a>
+												<a id="fastpostquote" href="javascript:;" title="引用" class="fqt">Quote</a>
+												<a id="fastpostcode" href="javascript:;" title="代码" class="fcd">Code</a>
+												<a href="javascript:;" class="fsml" id="fastpostsml">Smilies</a>
+											</div></div>
+											<div class="area">
+												<div class="pt hm">
+													您需要登录后才可以回帖 <a href="member.php?mod=logging&amp;action=login" onclick="showWindow('login', this.href)" class="xi2">登录</a> | <a href="member.php?mod=register" class="xi2">立即注册</a>
+													<a href="plugin.php?id=wechat:login"><img src="source/plugin/wechat/image/wechat_login.png" class="vm" /></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<input type="hidden" name="formhash" value="640375ca" />
+								<input type="hidden" name="usesig" value="" />
+								<input type="hidden" name="subject" value="  " />
+								<div class="ptm pnpost">
+									<em style="float: left;">
+									</em>
+									<button type="button" onclick="showWindow('login', 'member.php?mod=logging&action=login&guestmessage=yes')" onmouseover="checkpostrule('seccheck_fastpost', 'ac=reply');this.onmouseover=null" name="replysubmit" id="fastpostsubmit" class="pn pnc vm" value="replysubmit" tabindex="5" style="float: right; padding: 0 2px; height: 33px; line-height: 33px;"><strong style="font-size: 14px; font-weight: bold;">发表回复</strong></button>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="wp mtn">
+		<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+	</div>
+	<script type="text/javascript">
+		function succeedhandle_followmod(url, msg, values) {
+			var fObj = $('followmod_'+values['fuid']);
+			if(values['type'] == 'add') {
+				fObj.innerHTML = '不收听';
+				fObj.href = 'home.php?mod=spacecp&ac=follow&op=del&fuid='+values['fuid'];
+			} else if(values['type'] == 'del') {
+				fObj.innerHTML = '收听TA';
+				fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash=640375ca&fuid='+values['fuid'];
+			}
+		}
+		fixed_avatar([4], 1);
+	</script>
+	<script type="text/javascript">
+		(function() {
+			jQuery(window).scroll(function(){
+				if (jQuery(window).scrollTop()>300){
+					jQuery('#side_reply').fadeIn();
+				}else if(jQuery(window).scrollTop()<300){
+					jQuery('#side_reply').fadeOut();
+				}
+			});
+		})();
+	</script> 
+
+<!--{template common/footer}-->
